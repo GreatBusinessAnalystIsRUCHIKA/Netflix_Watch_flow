@@ -1,31 +1,34 @@
 # Netflix_Content_flow_Analysis_using_sql
 ![Netlix_LOGO](https://github.com/GreatBusinessAnalystIsRUCHIKA/Netflix_Watch_flow/blob/main/HD-wallpaper-netflix-logo-black-logo-netflix-pro-red.jpg)
-Overview
-This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems, solutions, findings, and conclusions.
 
-Objectives
-Analyze the distribution of content types (movies vs TV shows).
-Identify the most common ratings for movies and TV shows.
-List and analyze content based on release years, countries, and durations.
-Explore and categorize content based on specific criteria and keywords.
-Dataset
-The data for this project is sourced from the Kaggle dataset:
+## 📌 Overview  
+This project explores Netflix’s vast content library using **SQL**. The dataset includes details like movie titles, genres, release years, countries, ratings, and more. By writing SQL queries, we uncover trends, patterns, and insights about Netflix’s content distribution.  
 
-Dataset Link: Movies Dataset
-Schema
-DROP TABLE IF EXISTS netflix;
-CREATE TABLE netflix
-(
-    show_id      VARCHAR(5),
-    type         VARCHAR(10),
-    title        VARCHAR(250),
-    director     VARCHAR(550),
-    casts        VARCHAR(1050),
-    country      VARCHAR(550),
-    date_added   VARCHAR(55),
-    release_year INT,
-    rating       VARCHAR(15),
-    duration     VARCHAR(15),
-    listed_in    VARCHAR(250),
-    description  VARCHAR(550)
-);
+## 🚀 Key Objectives  
+This project aims to answer exciting questions, such as:  
+
+- 📊 **Movies vs. TV Shows:** What's the distribution?  
+- 🔍 **Most Common Ratings:** Which ratings dominate Netflix content?  
+- 📆 **Netflix Evolution:** How has the content changed over time?  
+- 🌍 **Top Content-Producing Countries:** Who contributes the most?  
+- 🎥 **Longest Movie:** What’s the longest runtime on Netflix?  
+- 📺 **TV Shows with Many Seasons:** Which shows have more than 5 seasons?  
+- 🎭 **Most Featured Actors in India:** Who appears the most?  
+- ⚔️ **Violent Content Analysis:** How many descriptions contain "violence" or "kill"?  
+
+## 📊 Dataset Information  
+- The dataset contains details of Netflix content, including:  
+  - **Title, Type (Movie/TV Show), Genre, Director, Cast, Release Year, Country, Rating, Duration, Date Added, and Description**.  
+- **Source:** [Netflix Movies and TV Shows Dataset](https://www.kaggle.com/datasets)  
+
+## 🛠️ Technologies Used  
+- **SQL (PostgreSQL)** – For writing and optimizing queries.  
+- **Power BI / Tableau** *(Optional)* – For visualizing trends.  
+
+## 📜 SQL Queries Used  
+Some key SQL techniques applied:  
+
+- 🔹 **String Functions:** `STRING_TO_ARRAY`, `SPLIT_PART`, `UNNEST`  
+- 🔹 **Window Functions:** `RANK() OVER (PARTITION BY …)`  
+- 🔹 **Aggregate Functions:** `COUNT()`, `AVG()`, `ROUND()`  
+- 🔹 **Date Functions:** `TO_DATE`, `INTERVAL`  
